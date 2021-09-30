@@ -26,8 +26,6 @@ function Projects() {
               </a>
             </div>
           </div>
-        </div>
-        <div class="projects__items">
           <div class="projects__item">
             <img src={state.travel} alt="My project" />
             <div class="projects__btns">
@@ -43,7 +41,7 @@ function Projects() {
             </div>
           </div>
         </div>
-
+       
         <div class="social-icons">
           
           <a href="https://www.facebook.com/profile.php?id=100030267948496">
