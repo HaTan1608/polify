@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import {useState} from 'react'
 function Projects() {
-    const [image] = useState('assets/projects/fshop.jpg')
+    const [state] = useState({fshop:'assets/projects/fshop.jpg',travel:'assets/projects/travel.jpg'})
     return (
         <>
          <Header/>
@@ -13,7 +13,7 @@ function Projects() {
         </div>
         <div class="projects__items">
           <div class="projects__item">
-            <img src={image} alt="My project" />
+            <img src={state.fshop} alt="My project" />
             <div class="projects__btns">
               <a
                 href="http://fshop-app.herokuapp.com/"
@@ -22,6 +22,22 @@ function Projects() {
                 <i class="fas fa-eye"></i>Preview
               </a>
               <a href="https://github.com/HaTan1608/FShop" class="projects__btn">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__items">
+          <div class="projects__item">
+            <img src={state.travel} alt="My project" />
+            <div class="projects__btns">
+              <a
+                href="https://nifty-golick-8629ac.netlify.app"
+                class="projects__btn"
+              >
+                <i class="fas fa-eye"></i>Preview
+              </a>
+              <a href="https://github.com/HaTan1608/Scss-Travel-Website" class="projects__btn">
                 <i class="fab fa-github"></i>Github
               </a>
             </div>

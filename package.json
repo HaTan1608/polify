@@ -15,7 +15,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts concurrently \" npm start \" \"npm run scss \"",
     "scss": "sass src/scss/main.scss src/scss/main.css --watch --no-source-map --style compressed",
     "dev": "concurrently \" npm start \" \"npm run scss \"",
     "build": "react-scripts build",
