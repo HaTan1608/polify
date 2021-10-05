@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import {useState} from 'react'
 function Projects() {
-    const [state] = useState({fshop:'assets/projects/fshop.jpg',travel:'assets/projects/travel.jpg'})
+    const [state] = useState({fshop:'assets/projects/fshop.jpg',travel:'assets/projects/travel.jpg',chat:'assets/projects/chat.jpg',crypto:'assets/projects/crypto.jpg'})
     return (
         <>
          <Header/>
@@ -36,6 +36,34 @@ function Projects() {
                 <i class="fas fa-eye"></i>Preview
               </a>
               <a href="https://github.com/HaTan1608/Scss-Travel-Website" class="projects__btn">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src={state.crypto} alt="My project" />
+            <div class="projects__btns">
+              <a
+                href="https://crypto-app-th.herokuapp.com"
+                class="projects__btn"
+              >
+                <i class="fas fa-eye"></i>Preview
+              </a>
+              <a href="https://github.com/HaTan1608/crypto-app" class="projects__btn">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src={state.chat} alt="My project" />
+            <div class="projects__btns">
+              <a
+                href="https://chat-app-th.netlify.app"
+                class="projects__btn"
+              >
+                <i class="fas fa-eye"></i>Preview
+              </a>
+              <a href="https://github.com/HaTan1608/chat-app" class="projects__btn">
                 <i class="fab fa-github"></i>Github
               </a>
             </div>
